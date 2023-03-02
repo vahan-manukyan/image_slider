@@ -1,0 +1,43 @@
+#image-slider {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.container img {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+img.active {
+  opacity: 1;
+}
+
+.btns {
+  position: relative;
+  z-index: 2;
+  top: 100px;
+}
+
+.btns button {
+  border: 1px solid #ccc;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  font-weight: bold;
+  opacity: 0.6;
+}
+p{
+  position:absolute ;
+  display: none;
+}
+p.active{
+  display: block;
+}
